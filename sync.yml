@@ -1,0 +1,49 @@
+group:
+  - files:
+      - source: docker-stack-template/.vscode
+        dest: .vscode
+        deleteOrphaned: true
+      - source: .clinerules
+        dest: .clinerules
+        deleteOrphaned: true
+      - source: .kilocode
+        dest: .kilocode
+        deleteOrphaned: true
+      - source: docker-stack-template/.gitmessage
+        dest: .gitmessage
+      - LICENSE-APACHE
+      - LICENSE-MIT
+    repos: |
+      zyrakq/docker-stack-collection
+
+      zyrakq/litellm-stack
+      zyrakq/n8n-stack
+      zyrakq/ollama-stack
+      zyrakq/open-webui-stack
+
+      zyrakq/bitcoin-core-stack
+
+      zyrakq/bagetter-stack
+
+      zyrakq/keycloak-stack
+
+      zyrakq/sunshine-stack
+
+      zyrakq/elasticsearch-stack
+      zyrakq/kibana-stack
+
+      zyrakq/dnsmasq-stack
+      zyrakq/network-client-stack
+      zyrakq/nginx-proxy-manager-stack
+      zyrakq/pi-hole-stack
+      zyrakq/unbound-stack
+      zyrakq/vpn-server-stack
+
+      zyrakq/webtop-desktop-stack
+
+      zyrakq/hledger-web-stack
+      zyrakq/invidious-stack
+      zyrakq/syncstorage-stack
+
+      zyrakq/letsencrypt-manager-stack
+      zyrakq/step-ca-manager-stack
