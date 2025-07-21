@@ -47,3 +47,5 @@ group:
 
       zyrakq/letsencrypt-manager-stack
       zyrakq/step-ca-manager-stack
+
+      zyrakq/gitea-stack
