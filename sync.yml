@@ -1,10 +1,23 @@
+zyrakq/keycloak-stack:
+  - source: docker-stack-template/build.sh
+    dest: src/keycloak/build.sh
+zyrakq/kanidm-stack:
+  - source: docker-stack-template/build.sh
+    dest: src/kanidm/build.sh
+zyrakq/open-webui-stack:
+  - source: docker-stack-template/build.sh
+    dest: src/open-webui/build.sh
+zyrakq/bagetter-stack:
+  - source: docker-stack-template/build.sh
+    dest: src/bagetter/build.sh
+zyrakq/gitea-stack:
+  - source: docker-stack-template/build.sh
+    dest: src/gitea/build.sh
+
 group:
   - files:
       - source: docker-stack-template/.vscode
         dest: .vscode
-        deleteOrphaned: true
-      - source: .clinerules
-        dest: .clinerules
         deleteOrphaned: true
       - source: .kilocode
         dest: .kilocode
@@ -26,6 +39,7 @@ group:
       zyrakq/bagetter-stack
 
       zyrakq/keycloak-stack
+      zyrakq/kanidm-stack
 
       zyrakq/sunshine-stack
 
