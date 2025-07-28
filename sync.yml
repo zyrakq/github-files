@@ -13,6 +13,12 @@ zyrakq/bagetter-stack:
 zyrakq/gitea-stack:
   - source: docker-stack-template/build.sh
     dest: src/gitea/build.sh
+zyrakq/synapse-stack:
+  - source: docker-stack-template/build.sh
+    dest: src/synapse/build.sh
+zyrakq/element-stack:
+  - source: docker-stack-template/build.sh
+    dest: src/element/build.sh
 
 group:
   - files:
@@ -63,3 +69,6 @@ group:
       zyrakq/step-ca-manager-stack
 
       zyrakq/gitea-stack
+
+      zyrakq/synapse-stack
+      zyrakq/element-stack
