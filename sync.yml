@@ -16,9 +16,30 @@ zyrakq/gitea-stack:
 zyrakq/synapse-stack:
   - source: docker-stack-template/build.sh
     dest: src/synapse/build.sh
+zyrakq/conduit-stack:
+  - source: docker-stack-template/build.sh
+    dest: src/conduit/build.sh
 zyrakq/element-stack:
   - source: docker-stack-template/build.sh
     dest: src/element/build.sh
+zyrakq/fluffychat-stack:
+  - source: docker-stack-template/build.sh
+    dest: src/fluffychat/build.sh
+zyrakq/commet-stack:
+  - source: docker-stack-template/build.sh
+    dest: src/commet/build.sh
+zyrakq/cinny-stack:
+  - source: docker-stack-template/build.sh
+    dest: src/cinny/build.sh
+zyrakq/rsshub-stack:
+  - source: docker-stack-template/build.sh
+    dest: src/rsshub/build.sh
+zyrakq/maubot-stack:
+  - source: docker-stack-template/build.sh
+    dest: src/maubot/build.sh
+zyrakq/mautrix-telegram-stack:
+  - source: docker-stack-template/build.sh
+    dest: src/mautrix-telegram/build.sh
 
 group:
   - files:
@@ -70,5 +91,15 @@ group:
 
       zyrakq/gitea-stack
 
+      zyrakq/rsshub-stack
+
       zyrakq/synapse-stack
+      zyrakq/conduit-stack
+
       zyrakq/element-stack
+      zyrakq/fluffychat-stack
+      zyrakq/commet-stack
+      zyrakq/cinny-stack
+
+      zyrakq/maubot-stack
+      zyrakq/mautrix-telegram-stack
