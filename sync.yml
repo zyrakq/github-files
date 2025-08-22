@@ -46,7 +46,7 @@ group:
       - source: docker-stack-template/.vscode
         dest: .vscode
         deleteOrphaned: true
-      - source: .kilocode
+      - source: docker-stack-template/.kilocode
         dest: .kilocode
         deleteOrphaned: true
       - source: docker-stack-template/.gitmessage
@@ -92,6 +92,8 @@ group:
       zyrakq/gitea-stack
 
       zyrakq/rsshub-stack
+
+      zyrakq/coturn-stack
 
       zyrakq/synapse-stack
       zyrakq/conduit-stack

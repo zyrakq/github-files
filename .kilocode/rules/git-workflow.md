@@ -37,3 +37,9 @@ Detailed git workflow rules. Includes strict commit formatting requirements, wor
 - Use `git commit -m "message"` for quick commits
 - For complex commits use `git commit` with editor opening
 - Avoid `git commit --amend` after push
+
+## sync.yml specific rules
+
+- For adding services: "Add [service-name] to sync configuration"
+- List specific services added in "what was done" block
+- Focus on service names, not generic "sync configuration" messages
