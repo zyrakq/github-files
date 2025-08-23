@@ -10,6 +10,9 @@ zyrakq/open-webui-stack:
 zyrakq/bagetter-stack:
   - source: docker-stack-template/build.sh
     dest: src/bagetter/build.sh
+zyrakq/distribution-stack:
+  - source: docker-stack-template/build.sh
+    dest: src/distribution/build.sh
 zyrakq/gitea-stack:
   - source: docker-stack-template/build.sh
     dest: src/gitea/build.sh
@@ -46,6 +49,16 @@ group:
       - source: docker-stack-template/.vscode
         dest: .vscode
         deleteOrphaned: true
+      - source: docker-stack-template/.gitmessage
+        dest: .gitmessage
+      - LICENSE-APACHE
+      - LICENSE-MIT
+    repos: |
+      zyrakq/docker-stack-collection
+  - files:
+      - source: docker-stack-template/.vscode
+        dest: .vscode
+        deleteOrphaned: true
       - source: docker-stack-template/.kilocode
         dest: .kilocode
         deleteOrphaned: true
@@ -54,8 +67,6 @@ group:
       - LICENSE-APACHE
       - LICENSE-MIT
     repos: |
-      zyrakq/docker-stack-collection
-
       zyrakq/litellm-stack
       zyrakq/n8n-stack
       zyrakq/ollama-stack
@@ -64,6 +75,7 @@ group:
       zyrakq/bitcoin-core-stack
 
       zyrakq/bagetter-stack
+      zyrakq/distribution-stack
 
       zyrakq/keycloak-stack
       zyrakq/kanidm-stack
