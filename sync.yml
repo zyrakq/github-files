@@ -1,18 +1,24 @@
+zyrakq/open-webui-stack:
+  - source: docker-stack-template/build.sh
+    dest: src/open-webui/build.sh
+zyrakq/libre-webui-stack:
+  - source: docker-stack-template/build.sh
+    dest: src/libre-webui/build.sh
 zyrakq/keycloak-stack:
   - source: docker-stack-template/build.sh
     dest: src/keycloak/build.sh
 zyrakq/kanidm-stack:
   - source: docker-stack-template/build.sh
     dest: src/kanidm/build.sh
-zyrakq/open-webui-stack:
-  - source: docker-stack-template/build.sh
-    dest: src/open-webui/build.sh
 zyrakq/bagetter-stack:
   - source: docker-stack-template/build.sh
     dest: src/bagetter/build.sh
 zyrakq/distribution-stack:
   - source: docker-stack-template/build.sh
     dest: src/distribution/build.sh
+zyrakq/openobserve-stack:
+  - source: docker-stack-template/build.sh
+    dest: src/openobserve/build.sh
 zyrakq/gitea-stack:
   - source: docker-stack-template/build.sh
     dest: src/gitea/build.sh
@@ -67,10 +73,13 @@ group:
       - LICENSE-APACHE
       - LICENSE-MIT
     repos: |
-      zyrakq/litellm-stack
       zyrakq/n8n-stack
+
+      zyrakq/litellm-stack
       zyrakq/ollama-stack
+
       zyrakq/open-webui-stack
+      zyrakq/libre-webui-stack
 
       zyrakq/bitcoin-core-stack
 
@@ -84,6 +93,7 @@ group:
 
       zyrakq/elasticsearch-stack
       zyrakq/kibana-stack
+      zyrakq/openobserve-stack
 
       zyrakq/dnsmasq-stack
       zyrakq/network-client-stack
